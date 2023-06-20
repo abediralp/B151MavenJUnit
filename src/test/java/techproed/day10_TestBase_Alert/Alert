@@ -1,0 +1,25 @@
+Alert Nedir ?
+            Alert uyari veya bilgi mesaji iceren pencere
+js Alert'u nasil handle ederiz ?
+            driver'i switchTo() mehodu ile alert() methodunu kullaranarak gecis yapar, accept() veya dismiss() methodlari ile
+            handle ederiz.
+
+/** AcceptAlert */
+public static void acceptAlert () {
+    driver.switchTo().alert().accept();
+}
+
+/** DissmissAlert */
+public static void dismissAlert () {
+    driver.switchTo().alert().dismiss();
+}
+
+/** getTextAlert */
+public static void getTextAlert () {
+    driver.switchTo().alert().getText();
+}
+
+/** sendKeysAlert */
+public static void sendKeysAlert (String text) {
+    driver.switchTo().alert().sendKeys(text);
+}
